@@ -12,7 +12,7 @@ class ChatbotBloc extends Bloc<ChatbotEvent, ChatbotState> {
       emit(ChatbotLoading());
 
       try {
-        final response = await ChatbotService.authLogin(event.message);
+        final response = await ChatbotService.sendMessage(event.message);
         // List<String> chat = [event.message, response?.message ?? ""];
         chat.add(event.message);
         chat.add(response.message);

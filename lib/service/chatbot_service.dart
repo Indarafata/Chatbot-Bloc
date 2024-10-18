@@ -3,7 +3,7 @@ import 'package:chatbot_bloc/model/chatbot_model.dart';
 import 'package:http/http.dart' as http;
 
 class ChatbotService {
-  static Future<ChatbotModel> authLogin(String msg) async {
+  static Future<ChatbotModel> sendMessage(String msg) async {
     // Replace it with your local URL as instructed in the repository description
     // for example
     const url = "http://192.168.1.100:8000";
